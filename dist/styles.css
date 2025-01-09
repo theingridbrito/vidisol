@@ -1,0 +1,177 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ef73a8;
+}
+header .logo {
+  width: 270px;
+  height: 100px;
+}
+header .nav {
+  display: flex;
+  gap: 10px 30px;
+  align-items: center;
+}
+header .nav .text {
+  font-size: 25px;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+header .nav .instagram {
+  width: 50px;
+}
+header .nav .pinterest {
+  width: 50px;
+}
+header .nav .whatsapp {
+  width: 50px;
+}
+
+main {
+  padding-top: none;
+}
+main .apresentacao {
+  padding-left: 50px;
+  background: linear-gradient(to bottom, #ef73a8, #f5e9df);
+  margin: 0px;
+}
+main .apresentacao .container-1 {
+  display: flex;
+  align-items: center;
+}
+main .apresentacao .container-1 .slogan .title {
+  font-size: 57px;
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+main .apresentacao .container-1 .slogan .subtitle {
+  font-size: 26PX;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main .apresentacao .container-1 .jessy {
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0));
+  width: 450.8px;
+}
+main .beneficios {
+  background-color: #f5e9df;
+  margin: 0px;
+}
+main .beneficios .titulo-sessao1 {
+  margin: 0%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+}
+main .beneficios .card-container-sessao1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+main .beneficios .card-container-sessao1 .cards1 {
+  background-color: #fabec0;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 15%;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 270px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 4px solid black;
+  padding: 10px;
+}
+main .beneficios .card-container-sessao1 .cards1 .titulo-secundario {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .beneficios .card-container-sessao1 .cards1 .texto-card1 {
+  font-size: 20px;
+  padding: 5px;
+}
+main .beneficios .card-container-sessao1 .cards1:hover {
+  height: 370px;
+  width: 280px;
+  transition: 0.5s;
+}
+main .beneficios .card-container-sessao1 .cards1:hover .titulo-secundario {
+  font-size: 21px;
+  transition: 0.5s;
+}
+main .beneficios .card-container-sessao1 .cards1:hover .texto-card1 {
+  font-size: 21px;
+  transition: 0.5s;
+}
+main .queridinhos {
+  background: linear-gradient(to top, #a0c42f 0%, #f5e9df 100%);
+  margin: 0px;
+}
+main .queridinhos .titulo-sessao2 {
+  margin: 0%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+}
+main .queridinhos .subtitulo-sessao2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+main .queridinhos .card-container-sessao2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+main .queridinhos .card-container-sessao2 .cards2 {
+  background: linear-gradient(to right, #ef73a8, #f00b6e 100%);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 15%;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 270px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 4px solid black;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
