@@ -1,5 +1,7 @@
-body {
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -98,13 +100,14 @@ main .beneficios .card-container-sessao1 .cards1 {
   font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
-  width: 270px;
+  width: 290px;
   height: 350px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   border: 4px solid black;
-  padding: 10px;
+  gap: 10px;
+  padding: 20px;
 }
 main .beneficios .card-container-sessao1 .cards1 .titulo-secundario {
   font-size: 20px;
@@ -116,7 +119,7 @@ main .beneficios .card-container-sessao1 .cards1 .texto-card1 {
 }
 main .beneficios .card-container-sessao1 .cards1:hover {
   height: 370px;
-  width: 280px;
+  width: 310px;
   transition: 0.5s;
 }
 main .beneficios .card-container-sessao1 .cards1:hover .titulo-secundario {
@@ -152,26 +155,91 @@ main .queridinhos .subtitulo-sessao2 {
   padding-bottom: 20px;
 }
 main .queridinhos .card-container-sessao2 {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding-bottom: 70px;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
 }
 main .queridinhos .card-container-sessao2 .cards2 {
+  position: relative;
   background: linear-gradient(to right, #ef73a8, #f00b6e 100%);
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-  border-radius: 15%;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
   font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
-  width: 270px;
-  height: 350px;
+  width: 350px;
+  max-width: 100%;
+  height: 300px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  transition: 0.5s;
+}
+main .queridinhos .card-container-sessao2 .cards2 .img-box2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+main .queridinhos .card-container-sessao2 .cards2 .img-box2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .queridinhos .card-container-sessao2 .cards2 .card2-content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  height: 0%;
+  padding: 0 30px;
   text-align: center;
-  border: 4px solid black;
-  padding: 10px;
+  overflow: hidden;
+  transition: 0.4s;
+  color: black;
+}
+main .queridinhos .card-container-sessao2 .cards2 .card2-content p {
+  font-size: 20px;
+}
+main .queridinhos .card-container-sessao2 .cards2:hover {
+  height: 340px;
+}
+main .queridinhos .card-container-sessao2 .cards2:hover .img-box2 {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+main .queridinhos .card-container-sessao2 .cards2:hover .card2-content {
+  top: 130px;
+  height: 250px;
+}
+
+@media (max-width: 480px) {
+  .queridinhos .cards2 {
+    width: 230px;
+    border-radius: 15px;
+  }
+  .queridinhos .cards2 .img-box2 {
+    width: 185px;
+    border-radius: 10px;
+  }
+  .queridinhos .cards2 .card2-content p {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
