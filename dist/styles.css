@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +53,7 @@ main .apresentacao {
 main .apresentacao .container-1 {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 main .apresentacao .container-1 .slogan .title {
   font-size: 57px;
@@ -59,6 +61,7 @@ main .apresentacao .container-1 .slogan .title {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  max-width: 80%;
 }
 main .apresentacao .container-1 .slogan .subtitle {
   font-size: 26PX;
@@ -73,77 +76,57 @@ main .apresentacao .container-1 .jessy {
 main .beneficios {
   background-color: #f5e9df;
   margin: 0px;
+  padding: 70px;
 }
-main .beneficios .titulo-sessao1 {
-  margin: 0%;
-  padding-top: 30px;
+main .beneficios h1 {
   padding-bottom: 60px;
   display: flex;
   justify-content: center;
   font-family: "League Spartan", serif;
   font-optical-sizing: auto;
-  font-weight: 800;
   font-style: normal;
-  font-size: 30px;
 }
 main .beneficios .card-container-sessao1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 70px;
+  flex-wrap: wrap;
 }
 main .beneficios .card-container-sessao1 .cards1 {
+  position: relative;
   background-color: #fabec0;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
   border-radius: 15%;
   font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
-  width: 290px;
-  height: 350px;
+  width: 310px;
+  max-width: 100%;
+  height: 380px;
   display: flex;
   flex-direction: column;
   text-align: left;
   border: 4px solid black;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
 }
-main .beneficios .card-container-sessao1 .cards1 .titulo-secundario {
+main .beneficios .card-container-sessao1 .cards1 p {
   font-size: 20px;
-  font-weight: 600;
-}
-main .beneficios .card-container-sessao1 .cards1 .texto-card1 {
-  font-size: 20px;
-  padding: 5px;
-}
-main .beneficios .card-container-sessao1 .cards1:hover {
-  height: 370px;
-  width: 310px;
-  transition: 0.5s;
-}
-main .beneficios .card-container-sessao1 .cards1:hover .titulo-secundario {
-  font-size: 21px;
-  transition: 0.5s;
-}
-main .beneficios .card-container-sessao1 .cards1:hover .texto-card1 {
-  font-size: 21px;
-  transition: 0.5s;
 }
 main .queridinhos {
   background: linear-gradient(to top, #a0c42f 0%, #f5e9df 100%);
   margin: 0px;
 }
-main .queridinhos .titulo-sessao2 {
+main .queridinhos h1 {
   margin: 0%;
   padding-top: 50px;
   display: flex;
   justify-content: center;
+  align-content: center;
   font-family: "League Spartan", serif;
   font-optical-sizing: auto;
-  font-weight: 800;
   font-style: normal;
-  font-size: 30px;
 }
 main .queridinhos .subtitulo-sessao2 {
   display: flex;
@@ -229,6 +212,14 @@ main .queridinhos .card-container-sessao2 .cards2:hover .card2-content {
 }
 
 @media (max-width: 480px) {
+  .benefícios .card-container-sessao1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefícios .card-container-sessao1 .cards1 {
+    width: 230px;
+    border-radius: 15px;
+  }
   .queridinhos .cards2 {
     width: 230px;
     border-radius: 15px;
