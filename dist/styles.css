@@ -6,40 +6,12 @@
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #ef73a8;
+  padding: 30px;
 }
-header .logo {
+header .vidisolDesigner .logo {
   width: 270px;
   height: 100px;
-}
-header .nav {
-  display: flex;
-  gap: 10px 30px;
-  align-items: center;
-}
-header .nav .text {
-  font-size: 25px;
-  font-family: "Lato", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-}
-header .nav .instagram {
-  width: 50px;
-}
-header .nav .pinterest {
-  width: 50px;
-}
-header .nav .whatsapp {
-  width: 50px;
 }
 
 main {
@@ -115,6 +87,7 @@ main .beneficios .card-container-sessao1 .cards1 p {
   font-size: 20px;
 }
 main .queridinhos {
+  padding-bottom: 70px;
   background: linear-gradient(to top, #a0c42f 0%, #f5e9df 100%);
   margin: 0px;
 }
@@ -134,7 +107,7 @@ main .queridinhos .subtitulo-sessao2 {
   font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 25px;
   padding-bottom: 20px;
 }
 main .queridinhos .card-container-sessao2 {
@@ -210,8 +183,71 @@ main .queridinhos .card-container-sessao2 .cards2:hover .card2-content {
   top: 130px;
   height: 250px;
 }
+main .clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a0c42f;
+}
+main .clientes h1 {
+  font-family: "League Spartan", serif;
+  padding: 30px;
+}
+main .clientes .slide-content {
+  margin: 0 40px;
+}
+main .clientes .slide-content .cards3 {
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #fabec0, #ef73a8 100%);
+}
+main .clientes .slide-content .cards3 .card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+}
+main .clientes .slide-content .cards3 .card-image .img-box3 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+main .menu-desktop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+main .menu-desktop .text {
+  font-size: 25px;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+main .menu-desktop .social-media {
+  display: flex;
+  align-content: space-around;
+  gap: 30px;
+}
+main .menu-desktop .social-media .instagram {
+  width: 50px;
+}
+main .menu-desktop .social-media .whatsapp {
+  width: 50px;
+}
+main .menu-desktop .social-media .pinterest {
+  width: 50px;
+}
 
 @media (max-width: 480px) {
+  header .vidisolDesigner {
+    width: 440px;
+  }
   .benefícios .card-container-sessao1 {
     display: flex;
     flex-direction: column;
