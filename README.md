@@ -4,10 +4,10 @@
 
 Este repositório contém o código-fonte do site institucional da **Vidisol**, uma empresa especializada em **design gráfico**. O projeto está em desenvolvimento e será uma landing page moderna e responsiva para apresentar os serviços, o portfólio e os diferenciais da marca.
 
-<h2 align="center">🖼️ Logo</h2>
+
 
 <p align="center">
-  <img src="./img/logo-963850857-1733175457-96fb06211b53b928fe7718fe52fafa991733175457-320-0.webp" alt="Logo da Vidisol" width="100"/>
+  <img src="./img/logo-963850857-1733175457-96fb06211b53b928fe7718fe52fafa991733175457-320-0.webp" alt="Logo da Vidisol" width="300"/>
 </p>
 
 ## 📌 Sobre o Projeto
